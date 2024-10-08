@@ -16,7 +16,7 @@ This is a web app that allows users to interactively manage their ask and answer
 
 
 ## How to Use?
-1. Go to the webpage: https://mrm-codes.github.io/forum-project/Login
+1. Go to the webpage: https://mrm-codes.github.io/forum-project/
 2. Register an account;
 Input your username, email and password, plus password confirmation;
 3. Login
