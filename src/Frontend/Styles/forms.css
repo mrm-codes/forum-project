@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sofadi+One&display=swap');
+
+
+*{
+    background-color: #e5e9e7;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Dosis:wght@200', 'Playwrite+DE+Grund:wght@100',' Sofadi+One', sans-serif;
+}
+.App{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    
+}
+
+/*NAVIGATION*/
+.navigation{
+    
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+  }
+  
+ .logo a{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: 'Sofadi+One', sans-serif;
+    letter-spacing: 0.1rem;
+    text-shadow: 0 0 2px rgba(0,0,0,0.5);
+    text-align: center;
+    transition: color 0.3s ease;
+    color: #000000;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+    text-decoration: none;
+    background: none;
+  }
+  
+  .logo span{
+    font-weight: 400;
+    color: #000000;
+    transition: color 0.3s ease;
+    background: none;
+  }
+  .nav-items{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+    font-family: 'Sofadi+One', sans-serif;
+    font-size: 1.1rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    transition: color 0.3s ease;
+    color: #222;
+    background-color: #000000;
+  }
+
+  .nav-items ul {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    background: none;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    transition: color 0.3s ease;
+    list-style: none;
+    position: relative;
+  }
+  
+  .nav-items ul a, .nav-items ul a li{
+    margin-right: 1rem;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+    border-radius: 5px;
+    text-decoration: none;
+    background: none;
+    transition: box-shadow 0.3s ease;
+    color: #eee;
+
+  }
+  
+  .nav-items ul li:hover{
+    color: #09a7db;
+    font-weight: 700;
+    box-shadow: 0 0 3px 2px rgba(0,0,0,0.2);
+
+  }
+  
+
+  /*Registration and Login*/
+.Register, .Login{
+    background-color: #fdfdfd;
+    padding: 1rem;
+    margin-top: 0.25rem;
+    box-shadow: 0 0 10px #0000001a;
+}
+
+.RegisterForm, .signForm{
+    width: 50%;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #e8e9e8;
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.RegisterForm label, .signForm label{
+    display: block;
+    margin-bottom: .5rem;
+    margin-top: 1rem;
+    font-weight: 600;
+    background: none;
+}
+.RegisterForm p, .RegisterForm h2, .signForm p, .signForm h2{
+    background: none;
+}
+.RegisterForm input[type="text"],
+.RegisterForm input[type="email"],
+.RegisterForm input[type="password"],
+.signForm input[type="email"],
+.signForm input[type="password"]{
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    border-radius: .5rem;
+    margin-bottom: .5rem;
+    font-size: 1rem;
+    background-color: #fafafa;
+    
+}
+
+.RegisterForm button, .signForm button{
+    
+    width: 20%;
+    align-self: center;
+    padding: .5rem 1.5rem;
+    margin-top: .25rem;
+    background-color: #010d14;
+    color: #eee;
+    border: none;
+    box-shadow: 0 2px 2px 0 #000000;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.RegisterForm p, .signForm p{
+    padding: 1rem;
+    font-size: .8rem;
+    font-weight: 700;
+}
+.RegisterForm p span,.signForm p span, .signForm p span a{
+    color: #d1470b;
+    cursor: pointer;
+    background: none;
+    margin-top: .25rem;
+    text-decoration: none;
+    background-color: none;
+}
+label span svg{
+    background: none;
+}
+.signForm .link{
+    color: #000000;
+}
+
+.RegisterForm .error{
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.valid{
+    
+    outline-color: #2ac49d;
+}
+.invalid{
+    
+    outline-color: #ff0000;
+}
+.errMsg{
+    color: #ff0000;
+    position: fixed;
+    top: 13x;
+    font-size: .75rem;
+}
+.intructions{display: block;}
+.hide, .offscreen{
+    display: none;
+}
+
+#userIdNote, #passwordNote{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .75rem;
+    align-self: center;
+}
+
+.success-message{
+    background-color: #22eb6fbe;
+    color: #000000;
+    align-self: center;
+    width: 25%;
+    position: absolute;
+    top: 25%;
+    left: 40%;
+    text-align: center;
+    height: 25%;
+    border-radius: 2rem;
+    box-shadow: 0 2px 3px 0 #06140c;
+}
+
+/* Question (thread) Form */
+
+
+
+.thread-form{
+    background-color: #fdfdfd;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    border-radius: 1rem;
+    margin-top: .5rem;
+}
+
+.thread-form h2{
+    color: #222;
+    font-size: 2rem;
+    background: none;
+    
+}
+.thread-form input[type="text"]{
+    width: 90%;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #fafafa;
+    border: none;
+    border-bottom: 1px solid #000000;
+    font-size: 1rem;
+}
+
+.thread-form button{
+    width: 20%;
+    align-self: center;
+    padding: .5rem 1.5rem;
+    margin-top: .75rem;
+    margin-bottom: .5rem;
+    background-color: #03101b;
+    color: #eee;
+    border: none;
+    box-shadow: 0 2px 2px 0 #000000;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.thread-form button svg {
+    fill: #ffffff;
+    font-size: 1.25rem;
+    background: none;
+}
+
+.thread-form button:hover{
+    color: #c6d1cc;
+}

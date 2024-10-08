@@ -1,0 +1,459 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Playwrite+DE+Grund:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sofadi+One&display=swap');
+
+
+*{
+    background-color: #c6d1cc;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playwrite+DE+Grund:wght@100',' Sofadi+One', sans-serif;
+}
+
+.user-dash{
+    background-color: #ffffff;
+    display: inline;
+}
+.header{
+    background-color: #000805;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: none;
+    width: 25%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.header .search-bar{
+    width: 45%;
+    padding: .5rem;
+    background: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: baseline;
+    
+}
+.search-bar input[type='text']{
+    padding: .9rem;
+    width: 90%;
+    border-radius: 5px;
+    border: none;
+    background-color: #f3f3f3;
+    color: #222;
+    font-size: 1rem;
+    margin-right: .5rem;
+    outline: none;
+}
+
+.search-bar button{
+    padding: 0;
+    background: none;
+    outline: none;
+    border: none;
+    margin: 0;
+    border-radius: 5px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+.search-bar button svg{
+   
+   fill: #f3f3f3;
+   background: none;
+}
+
+.header-items{
+    width: 25%;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; 
+    align-items: center;
+    justify-content: space-evenly;
+    background: none;
+    justify-content: center;
+}
+
+.message{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding: .5rem;
+  color: #ffffff;
+}
+
+.header-items .message div {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: .25rem;
+    background: none;
+}
+.header-items .message img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+.header-items .message p{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+    color: #f3f3f3;
+    background: none;
+}
+
+.header-items .message p span{
+    color: #157ed4;
+    font-size: 1.25rem;
+    background: none;
+}
+
+.header-items button{
+    font-size: .95rem;
+    font-weight: 700;
+    font-family: 'Playwrite+DE+Grund:wght@100',' Sofadi+One', sans-serif;
+    background: none;
+    color: #ffffff;
+    border: none;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-items button:hover{
+    color: #b3b9b0;
+    
+}
+/* Body */
+.body{
+    margin-top: .25rem;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+ 
+}
+/* Navigation Menu */
+.nav-menu{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    color: #ffffff;
+    background-color: #e0e0e0;
+    padding: 1rem;  
+}
+
+.nav-menu button{
+    background-color: #000000;
+    color: #f3f3f3;
+    font-size: 2rem;
+    font-weight: 700;
+    padding:.5rem 1rem;
+    border: none;
+    margin: 1rem 0;
+    transition: background-color .25s ease;
+    border-radius: .5rem;
+    outline: none;
+    cursor: pointer;
+}
+.nav-menu button:hover{
+    color: #b3b9b0;
+}
+
+/* Categories */
+
+.categories-list{
+    width: 100%;
+    background:none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: flex-start;
+    padding: .25rem;
+}
+.categories-list li {
+    width: 60%;
+    list-style-type: none;
+    margin: .25rem 1rem;
+    padding: .5rem;
+    color: #222;
+    font-size: 1.25rem;
+    font-weight: 700;
+    background: none;
+    text-transform: capitalize;
+}
+
+.categories-list li:hover{
+    background-color: #d3d3d3;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: .5rem;
+    width: 60%;
+}
+
+
+.categories-list li.active{
+    background-color: #157ed4;
+    border-radius: .5rem;
+}
+/* Content wrapper */
+
+.content-wrapper{
+    width: 60%;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+/* Threads */
+.create-threads, .threads{
+    background-color: #ffffff;
+    width: 100%;
+    
+}
+
+.show-threads{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    margin-top: 1rem;
+}
+
+.thread-list{
+    width: 100%;
+    background-color: #030003;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    
+    
+}
+.thread-list h1{
+    align-self: center;
+    color: #f3f3f3;
+    font-weight: 700;
+    background: none;
+    margin-bottom: .5rem;
+    
+}
+
+.thread-list .list-item{
+    background-color: #ffffff;
+    padding:.75rem;
+    border-radius: 5px;
+    margin: .5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+.thread-list .list-item .title{
+    color: #000000;
+    background: none;
+    text-align: left;
+    cursor: pointer;
+}
+.list-item .details{
+    margin-top: .25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    font-size: .75rem;
+    background: none;
+    margin-left:.5rem;
+}
+
+.list-item .details p{
+    color: #030202;
+    background: none;
+}
+
+.active-thread{
+    background-color: #d44115;
+    color: #ffffff;
+    font-weight: 700;
+    background: none;
+    padding:.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Comment form */
+.comment-form{
+    width: 100%;
+    background-color: #ffffff;
+    display: inline;
+    margin-top: .25rem;
+    
+}
+
+
+.posts form{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.posts form textarea {
+    width: 100%;
+    background: none;
+    padding:.5rem;
+    border: none;
+    border-radius: .5rem;
+    outline: none;
+    background-color: #ececec;
+    color: #222;
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+.posts form button {
+    
+    width: 3%;
+    align-self: center;
+    padding: .75rem;
+    margin-right: .25rem;
+    margin-bottom: .5rem;
+    background-color: #031422;
+    color: #eee;
+    border: none;
+    box-shadow: 0 2px 2px 0 #000000;
+    border-radius: .5rem;
+    
+    cursor: pointer;
+}
+
+.posts form button svg, .buttons button svg{
+    fill: #ffffff;
+    font-size: .65rem;
+    background: none;
+}
+.buttons{
+    display: flex;
+    background-color: #161515;
+    padding: .15rem;
+}
+
+.buttons button {
+    width: 3%;
+    align-self: center;
+    padding: .5rem;
+    margin-right: .25rem;
+    margin-bottom: .5rem;
+    background-color: #031422;
+    color: #eee;
+    border: none;
+    box-shadow: 0 2px 2px 0 #000000;
+    border-radius: .5rem;
+    font-weight: 700;
+    font-size: .65rem;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: #1e93f3;
+}
+/* Comments */
+.thread-author{
+    margin-right:.5rem;
+    font-weight: 700;
+    color: #16b658;
+    background: none;
+}
+
+.post-author{
+    margin-right:.5rem;
+    font-weight: 700;
+    color: #1e93f3;
+    background: none;
+}
+.post-list{
+    width: 100%;
+    background-color: #ebebeb;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+}
+
+.post{
+    background-color: #fffbfb;
+    margin-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding:.5rem;
+    border-radius: .5rem;
+    border: 1px solid #d3d3d3;
+    margin-bottom: 1rem;
+}
+.post p{
+    color: #222;
+    background: none;
+    font-size: 1rem;
+    padding: .5rem;
+    
+}
+.post .details{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    color: #000000;
+    font-size: .8rem;
+    background: none;
+}
+
+.post .details p{
+    color: #030202;
+    font-size: .75rem;
+    background: none;
+}
+
+/* Navigation items */
+
+/*About*/
+.hide{
+    display: none;
+};
+
+.about{
+    background-color: #fafafa;
+    border: 1px solid #031422;
+    border-radius: .5rem;
+}
+
+.about p{
+    color: #000000;
+    background: none;
+    font-size: .75rem;
+    padding: .5rem;
+}
