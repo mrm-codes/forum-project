@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.js": "/forum-project/static/js/main.1b9b9d61.js",
+    "main.css": "/forum-project/static/css/main.31d6cfe0.css",
+    "main.js": "/forum-project/static/js/main.acd06e8f.js",
     "index.html": "/forum-project/index.html",
-    "main.1b9b9d61.js.map": "/forum-project/static/js/main.1b9b9d61.js.map"
+    "main.acd06e8f.js.map": "/forum-project/static/js/main.acd06e8f.js.map"
   },
   "entrypoints": [
-    "static/js/main.1b9b9d61.js"
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.acd06e8f.js"
   ]
 }
