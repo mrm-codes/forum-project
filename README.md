@@ -32,12 +32,14 @@ To see what you posted click the category again and it will show. Do the same fo
 To build this React App, I used Technologies like a desktop computer with Windows OS, and Visual Studio Code for programming the application.
 
 This React application was built using softwares like html, css, js and React js.
+For Backend: bcryptjs, cors, express, jsonwebtoken, mysql2, nodemon, sequelize and dotenv
+For Frontend: axios, react-icons, and react-router-dom.
 
 ## Future improvements
 For the future we intend to add features like: 
-- Add or Backend the application for better data management;
-- Add an administrator to create users;
+- Add user profile manager and roles;
+- Add upvotes(likes, deslikes) and replies;
 - Add Nofifcations and correspondences (messages oor email);
-- Add Task time tracking, settong prioties and dues.
+
 
 
