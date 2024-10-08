@@ -21,8 +21,10 @@ function configureMiddleware(app) {
   app.use(helmet());
 
   // CORS configuration
+  const allowedOrigins = ['https://mrm-codes.github.io', 'https://mrm-codes.github.io/forum-project/'];
+
   const corsOptions = {
-      origin: 'http://localhost:3000',
+      origin: allowedOrigins,
       methods: ['GET', 'POST', 'PUT', 'DELETE'],
       allowedHeaders: ['Authorization', 'Content-Type'],
       credentials: true,
